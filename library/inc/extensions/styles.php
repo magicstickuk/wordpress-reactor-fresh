@@ -29,6 +29,7 @@ function reactor_register_styles() {
 	wp_register_style('foundicons', get_template_directory_uri() . '/library/fonts/foundation-icons.css', array(), false, 'all');
 	wp_register_style('reactor', get_template_directory_uri() . '/library/css/reactor.css', array(), false, 'all');
 	wp_register_style('style', get_stylesheet_directory_uri() . '/style.css', array(), false, 'all');
+	wp_register_style('follanos', get_stylesheet_directory_uri() . '/library/css/follanos.css', array(), false, 'all');
 }
 
 function reactor_enqueue_styles() {
@@ -37,7 +38,8 @@ function reactor_enqueue_styles() {
 		wp_enqueue_style('normalize');
 		wp_enqueue_style('foundation');
 		wp_enqueue_style('foundicons');
-		wp_enqueue_style('reactor'); 
+		wp_enqueue_style('reactor');
+		wp_enqueue_style('follanos'); 
 		
 		// add style.css with child themes
 		if ( is_child_theme() ) {
